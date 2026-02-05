@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        
+        <!-- Encabezado -->
+        <header class="header">
+            <h1>📊 Mi Dashboard</h1>
+            <button class="menu-toggle">☰ Menu</button>
+        </header>
+
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <nav class="menu">
+                <ul>
+                    <li class="menu-item active">🏠 Inicio</li>
+                    <li class="menu-item">📈 Estadisticas</li>
+                    <li class="menu-item">📝 Reportes</li>
+                    <li class="menu-item">⚙️ Configuracion</li>
+                    <li class="menu-item">👤 Perfil</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            
+            <!-- Cards con efecto masonry -->
+            <div class="cards-container masonry">
+                
+                <!-- Card alta -->
+                <div class="card card-blue tall">
+                    <h3>Usuarios Activos</h3>
+                    <p class="number">1,245</p>
+                    <p class="trend">↑ 12% desde ayer</p>
+                </div>
+
+                <!-- Card ancha -->
+                <div class="card card-green wide">
+                    <h3>Ventas</h3>
+                    <p class="number">$24,890</p>
+                    <p class="trend">↑ 8% desde ayer</p>
+                </div>
+
+                <!-- Card normal -->
+                <div class="card card-orange">
+                    <h3>Tickets</h3>
+                    <p class="number">342</p>
+                    <p class="trend">↓ 3% desde ayer</p>
+                </div>
+
+                <!-- Otra card normal -->
+                <div class="card card-purple">
+                    <h3>Servidores</h3>
+                    <p class="number">18/20</p>
+                    <p class="trend">✓ En linea</p>
+                </div>
+            </div>
+
+            <!-- Gráficos con flexbox -->
+            <div class="charts-container flex-layout">
+                
+                <div class="chart-box flex-item">
+                    <h3>📊 Grafico de Actividad</h3>
+                    <div class="chart-placeholder">
+                        <div class="bar bar-1"></div>
+                        <div class="bar bar-2"></div>
+                        <div class="bar bar-3"></div>
+                        <div class="bar bar-4"></div>
+                        <div class="bar bar-5"></div>
+                    </div>
+                </div>
+
+                <div class="chart-box flex-item">
+                    <h3>📈 Tendencias</h3>
+                    <div class="chart-placeholder line-chart">
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actividad reciente -->
+            <div class="activity-section">
+                <h3>📋 Actividad Reciente</h3>
+                <div class="activity-list">
+                    
+                    <div class="activity-item">
+                        <span class="activity-icon">✅</span>
+                        <div class="activity-info">
+                            <strong>Nuevo usuario registrado</strong>
+                            <small>Hace 5 minutos</small>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <span class="activity-icon">🛒</span>
+                        <div class="activity-info">
+                            <strong>Venta completada</strong>
+                            <small>Hace 15 minutos</small>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <span class="activity-icon">🔧</span>
+                        <div class="activity-info">
+                            <strong>Servidor actualizado</strong>
+                            <small>Hace 1 hora</small>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <span class="activity-icon">📧</span>
+                        <div class="activity-info">
+                            <strong>Correo enviado</strong>
+                            <small>Hace 2 horas</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Pie de pagina -->
+        <footer class="footer">
+            <p>© 2026 Dashboard Interactivo | Ejercicio de CSS</p>
+        </footer>
+    </div>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
